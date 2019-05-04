@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+        }
+        .pad {
+            padding-top: 10px;
+        }
+        input::-webkit-input-placeholder {
+            color: black !important;
+        }
+        * {
+background-color: black;    
+}
+
+a {
+position: relative;
+font-family: monospace;
+background-color: black;
+text-decoration: none;
+color: white;
+font-size: 4em;
+}
+
+.cursor {
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+background: black;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+border-left: .5em solid;
+
+-webkit-animation: typing 12s steps(90, end) infinite,
+    blinking 1s step-end infinite;
+animation: typing 12s steps(90, end) infinite,
+    blinking 1s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+from,to { width: 100%; }
+25% { width: 0; }
+50% { width: 0; }
+75% { width: 100%; }
+}
+
+@keyframes typing {
+from { width: 100%; }
+to { width: 0; }
+}
+
+@-webkit-keyframes blinking {
+from, to { border-color: transparent; }
+50% { border-color: white; }
+}
+
+@keyframes blinking {
+from, to { border-color: transparent; }
+50% { border-color: white; }
+}
+    </style>
+    <div class="container">
+        <a href="#">Login Interded&nbsp;<span class="cursor">&nbsp;</span></a>
+        <div style="padding-top: 50px">    
+    <form>
+        <div class="form-group">
+        <label for="exampleInputEmail1" style="color: white">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+        <label for="exampleInputPassword1" style="color: white">Password</label>
+        <input type="password" class="form-control" id="passwordID" placeholder="Password">
+        </div>
+        <div class="row" >
+                <div class="col-lg-4 col-sm-6 mx-auto">
+                    <div class="input-group mb-3">
+                    <div class="input-group-append" class="col">
+                        <button class="btn textcol btn-outline-light btn-lg rounded-right" type="submit" >Войти</button>
+                    </div>
+                         <div class="input-group-append" class="col" style="padding-left: 10px;">
+                            <form>
+                                <button class="btn textcol btn-outline-light btn-lg rounded-right" type="submit">Назад</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
